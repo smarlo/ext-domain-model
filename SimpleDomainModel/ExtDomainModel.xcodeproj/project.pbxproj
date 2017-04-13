@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D21C9071E9F014F0094BD31 /* MathProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21C9061E9F014F0094BD31 /* MathProtocolTests.swift */; };
+		6D21C9091E9F01700094BD31 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21C9081E9F01700094BD31 /* ExtensionTests.swift */; };
+		6D21C90B1E9F01EB0094BD31 /* ConvertibleProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21C90A1E9F01EB0094BD31 /* ConvertibleProtocolTests.swift */; };
 		FE6891181CB5D8E40018C340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891171CB5D8E40018C340 /* main.swift */; };
 		FE6891251CB5D90B0018C340 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891241CB5D90B0018C340 /* ExtDomainModelTests.swift */; };
 		FE68912A1CB5D9130018C340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891171CB5D8E40018C340 /* main.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D21C9061E9F014F0094BD31 /* MathProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathProtocolTests.swift; sourceTree = "<group>"; };
+		6D21C9081E9F01700094BD31 /* ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		6D21C90A1E9F01EB0094BD31 /* ConvertibleProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertibleProtocolTests.swift; path = ../ConvertibleProtocolTests.swift; sourceTree = "<group>"; };
 		FE6891141CB5D8E40018C340 /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6891171CB5D8E40018C340 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FE6891221CB5D90B0018C340 /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				FE6891241CB5D90B0018C340 /* ExtDomainModelTests.swift */,
+				6D21C9061E9F014F0094BD31 /* MathProtocolTests.swift */,
+				6D21C90A1E9F01EB0094BD31 /* ConvertibleProtocolTests.swift */,
+				6D21C9081E9F01700094BD31 /* ExtensionTests.swift */,
 				FE6891261CB5D90B0018C340 /* Info.plist */,
 				FE68912B1CB5FDC60018C340 /* JobTests.swift */,
 				FE68912D1CB5FEC70018C340 /* MoneyTests.swift */,
@@ -195,10 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE68912C1CB5FDC60018C340 /* JobTests.swift in Sources */,
+				6D21C9071E9F014F0094BD31 /* MathProtocolTests.swift in Sources */,
 				FE68912A1CB5D9130018C340 /* main.swift in Sources */,
+				6D21C90B1E9F01EB0094BD31 /* ConvertibleProtocolTests.swift in Sources */,
 				FE6891301CB6023B0018C340 /* PersonTests.swift in Sources */,
 				FE68912E1CB5FEC70018C340 /* MoneyTests.swift in Sources */,
 				FE6891251CB5D90B0018C340 /* ExtDomainModelTests.swift in Sources */,
+				6D21C9091E9F01700094BD31 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

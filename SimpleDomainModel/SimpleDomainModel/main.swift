@@ -23,29 +23,31 @@ open class TestMe {
 ////////////////////////////////////
 // Protocols
 //
-protocol CustomStringConvertible {
-    func description() -> String
-}
-
 protocol Mathematics {
     func add(_ to: Money) -> Money
     func subtract(_ to: Money) -> Money
 }
 
-public func + (first: Money, second: Money) -> Money {
-    return first.add(second)
-}
-
-public func - (first: Money, second: Money) -> Money {
-    return first.subtract(second)
+////////////////////////////////////
+// Extension
+//
+extension Double {
+    var USD: Money { return Money(amount: Int(self), currency: "USD") }
+    var EUR: Money { return Money(amount: Int(self), currency: "EUR") }
+    var GBP: Money { return Money(amount: Int(self), currency: "GBP") }
+    var CAN: Money { return Money(amount: Int(self), currency: "CAN") }
 }
 
 ////////////////////////////////////
 // Money
 //
-public struct Money {
+public struct Money: CustomStringConvertible, Mathematics {
     public var amount : Int
     public var currency : String
+    
+    public var description: String {
+        get { return "\(currency)\(amount)" }
+    }
     
     public func convert(_ to: String) -> Money {
         var converted: Double = 0
@@ -125,18 +127,18 @@ public struct Money {
             return Money(amount: from.amount - self.amount, currency: self.currency)
         }
     }
-    
-    public func description() -> String {
-        return "\(currency)\(amount)"
-    }
 }
 
 ////////////////////////////////////
 // Job
 //
-open class Job {
+open class Job: CustomStringConvertible {
     fileprivate var title : String
     fileprivate var type : JobType
+    
+    public var description: String {
+        get { return "Title: \(self.title), Salary: \(String(self.calculateIncome(2000)))" }
+    }
     
     public enum JobType {
         case Hourly(Double)
@@ -170,10 +172,14 @@ open class Job {
 ////////////////////////////////////
 // Person
 //
-open class Person {
+open class Person: CustomStringConvertible {
     open var firstName : String = ""
     open var lastName : String = ""
     open var age : Int = 0
+    
+    public var description: String {
+        get { return "\(self.firstName) \(self.lastName), \(self.age)" }
+    }
     
     fileprivate var _job : Job? = nil
     open var job : Job? {
@@ -209,7 +215,7 @@ open class Person {
 ////////////////////////////////////
 // Family
 //
-open class Family {
+open class Family: CustomStringConvertible {
     fileprivate var members : [Person] = []
     
     public init(spouse1: Person, spouse2: Person) {
@@ -220,6 +226,19 @@ open class Family {
                 members.append(spouse1)
                 members.append(spouse2)
             }
+        }
+    }
+    
+    public var description: String {
+        get {
+            var description = ""
+            for (num, member) in members.enumerated() {
+                description += "\(member.firstName) \(member.lastName)"
+                if num < members.count - 1 {
+                    description += ", "
+                }
+            }
+            return description
         }
     }
     
