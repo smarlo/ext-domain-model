@@ -24,8 +24,8 @@ open class TestMe {
 // Protocols
 //
 protocol Mathematics {
-    func add(_ to: Money) -> Money
-    func subtract(_ to: Money) -> Money
+    static func +(_ first: Self, _ second: Self) -> Self
+    static func -(_ first: Self, _ second: Self) -> Self
 }
 
 ////////////////////////////////////
@@ -126,6 +126,14 @@ public struct Money: CustomStringConvertible, Mathematics {
         } else {
             return Money(amount: from.amount - self.amount, currency: self.currency)
         }
+    }
+    
+    static func +(_ first: Money, _ second: Money) -> Money {
+        return first.add(second)
+    }
+    
+    static func -(_ first: Money, _ second: Money) -> Money {
+        return second.subtract(first)
     }
 }
 

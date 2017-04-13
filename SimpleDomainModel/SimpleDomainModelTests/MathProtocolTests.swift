@@ -12,17 +12,17 @@ import ExtDomainModel
 class MathProtocolTests: XCTestCase {
 
     func testMoneyAddition() {
-        let left = Money(amount: 50, currency: "USD")
-        let right = Money(amount: 50, currency: "USD")
-        let sum = left.add(right)
+        let first = Money(amount: 50, currency: "USD")
+        let second = Money(amount: 50, currency: "USD")
+        let sum = first + second
         XCTAssert(sum.description == "USD100")
     }
     
     func testMoneySubtraction() {
-        let left = Money(amount: 50, currency: "USD")
-        let right = Money(amount: 80, currency: "USD")
-        let sum = left.subtract(right)
-        XCTAssert(sum.description == "USD30")
+        let first = Money(amount: 50, currency: "USD")
+        let second = Money(amount: 80, currency: "USD")
+        let difference = second - first
+        XCTAssert(difference.description == "USD30")
     }
 
 
