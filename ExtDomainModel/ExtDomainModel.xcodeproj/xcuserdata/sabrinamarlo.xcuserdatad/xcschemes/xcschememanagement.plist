@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SimpleDomainModel.xcscheme</key>
+		<key>ExtDomainModel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>SimpleDomainModelTests.xcscheme</key>
+		<key>ExtDomainModelTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>FE6891131CB5D8E40018C340</key>
+		<key>6D2ACBEA1EA01BD300A7DADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE6891211CB5D90B0018C340</key>
+		<key>6D2ACBF81EA01C9A00A7DADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

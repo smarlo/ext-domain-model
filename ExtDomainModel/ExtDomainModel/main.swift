@@ -5,19 +5,18 @@
 //  Created by Ted Neward on 4/6/16.
 //  Copyright © 2016 Ted Neward. All rights reserved.
 //
-
 import Foundation
 
 print("Hello, World!")
 
 public func testMe() -> String {
-  return "I have been tested"
+    return "I have been tested"
 }
 
 open class TestMe {
-  open func Please() -> String {
-    return "I have been tested"
-  }
+    open func Please() -> String {
+        return "I have been tested"
+    }
 }
 
 ////////////////////////////////////

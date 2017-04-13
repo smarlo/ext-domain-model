@@ -5,12 +5,11 @@
 //  Created by Sabrina Niklaus on 4/12/17.
 //  Copyright © 2017 Ted Neward. All rights reserved.
 //
-
 import XCTest
 import ExtDomainModel
 
 class MathProtocolTests: XCTestCase {
-
+    
     func testMoneyAddition() {
         let first = Money(amount: 50, currency: "USD")
         let second = Money(amount: 50, currency: "USD")
@@ -24,6 +23,6 @@ class MathProtocolTests: XCTestCase {
         let difference = second - first
         XCTAssert(difference.description == "USD30")
     }
-
-
+    
+    
 }

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE6891131CB5D8E40018C340"
+               BlueprintIdentifier = "6D2ACBEA1EA01BD300A7DADE"
                BuildableName = "ExtDomainModel"
                BlueprintName = "ExtDomainModel"
                ReferencedContainer = "container:ExtDomainModel.xcodeproj">
@@ -32,22 +32,17 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE6891211CB5D90B0018C340"
+               BlueprintIdentifier = "6D2ACBF81EA01C9A00A7DADE"
                BuildableName = "ExtDomainModelTests.xctest"
                BlueprintName = "ExtDomainModelTests"
                ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ConvertTests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE6891131CB5D8E40018C340"
+            BlueprintIdentifier = "6D2ACBEA1EA01BD300A7DADE"
             BuildableName = "ExtDomainModel"
             BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">
@@ -70,7 +65,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE6891131CB5D8E40018C340"
+            BlueprintIdentifier = "6D2ACBEA1EA01BD300A7DADE"
             BuildableName = "ExtDomainModel"
             BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">
@@ -89,7 +84,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE6891131CB5D8E40018C340"
+            BlueprintIdentifier = "6D2ACBEA1EA01BD300A7DADE"
             BuildableName = "ExtDomainModel"
             BlueprintName = "ExtDomainModel"
             ReferencedContainer = "container:ExtDomainModel.xcodeproj">

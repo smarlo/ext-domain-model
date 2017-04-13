@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,10 +16,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE6891211CB5D90B0018C340"
-               BuildableName = "SimpleDomainModelTests.xctest"
-               BlueprintName = "SimpleDomainModelTests"
-               ReferencedContainer = "container:SimpleDomainModel.xcodeproj">
+               BlueprintIdentifier = "6D2ACBF81EA01C9A00A7DADE"
+               BuildableName = "ExtDomainModelTests.xctest"
+               BlueprintName = "ExtDomainModelTests"
+               ReferencedContainer = "container:ExtDomainModel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
